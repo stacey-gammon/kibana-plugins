@@ -1,0 +1,46 @@
+{
+  "optimizerCacheKey": {
+    "workerConfig": {
+      "cache": true,
+      "dist": true,
+      "profileWebpack": false,
+      "repoRoot": "/Users/gammon/Elastic/kibana2",
+      "watch": false,
+      "optimizerCacheKey": "♻",
+      "browserslistEnv": "production"
+    },
+    "lastCommit": "c5f682cbbc285976de805f96580aff05f0c8a10f",
+    "bootstrap": "# this is only human readable for debugging, please don't try to parse this\n@kbn/babel-preset:d46ee7ad4e2540040c6d6838278506583aefc394\n@kbn/dev-utils:c8e3e0defdadd837668f75c8aa848d8cbda65688\n@kbn/expect:d8f5076701581dd9ba3805eb0f1f37adc576c179\n@kbn/i18n:e3aa574bd46a10f13976f52c9a319db5b65548ef\n@kbn/optimizer:51dd6a6d7863b4052c0bf045c072fde8ae358720\n@kbn/ui-shared-deps:9ea961893798efaf8724f5d4db2d06b9303a27d5",
+    "deletedPaths": [],
+    "modifiedTimes": {}
+  },
+  "cacheKey": {
+    "spec": {
+      "type": "plugin",
+      "id": "greetingCards",
+      "entry": "./public/index",
+      "contextDir": "/Users/gammon/Elastic/kibana2/plugins/greeting_cards_v1",
+      "sourceRoot": "/Users/gammon/Elastic/kibana2",
+      "outputDir": "/Users/gammon/Elastic/kibana2/plugins/greeting_cards_v1/target/public"
+    },
+    "mtimes": {
+      "/Users/gammon/Elastic/kibana2/plugins/greeting_cards_v1/public/app.tsx": 1588873557456.0215,
+      "/Users/gammon/Elastic/kibana2/plugins/greeting_cards_v1/public/greeting_card_creator.tsx": 1588873557456.187,
+      "/Users/gammon/Elastic/kibana2/plugins/greeting_cards_v1/public/greeting_card_viewer.tsx": 1588873557456.321,
+      "/Users/gammon/Elastic/kibana2/plugins/greeting_cards_v1/public/index.ts": 1588873557456.457,
+      "/Users/gammon/Elastic/kibana2/plugins/greeting_cards_v1/public/plugin.ts": 1588873557456.5999,
+      "/Users/gammon/Elastic/kibana2/plugins/greeting_cards_v1/public/services.ts": 1588873557457.0608,
+      "/Users/gammon/Elastic/kibana2/plugins/greeting_cards_v1/public/types.ts": 1588873557457.5098
+    }
+  },
+  "moduleCount": 7,
+  "files": [
+    "/Users/gammon/Elastic/kibana2/plugins/greeting_cards_v1/public/app.tsx",
+    "/Users/gammon/Elastic/kibana2/plugins/greeting_cards_v1/public/greeting_card_creator.tsx",
+    "/Users/gammon/Elastic/kibana2/plugins/greeting_cards_v1/public/greeting_card_viewer.tsx",
+    "/Users/gammon/Elastic/kibana2/plugins/greeting_cards_v1/public/index.ts",
+    "/Users/gammon/Elastic/kibana2/plugins/greeting_cards_v1/public/plugin.ts",
+    "/Users/gammon/Elastic/kibana2/plugins/greeting_cards_v1/public/services.ts",
+    "/Users/gammon/Elastic/kibana2/plugins/greeting_cards_v1/public/types.ts"
+  ]
+}
