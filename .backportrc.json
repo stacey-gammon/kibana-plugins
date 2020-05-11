@@ -1,0 +1,4 @@
+{
+  "upstream": "Stacey-Gammon/kibana-plugins",
+  "targetBranchChoices": [{ "name": "7.x", "checked": true }, "7.7"]
+}
