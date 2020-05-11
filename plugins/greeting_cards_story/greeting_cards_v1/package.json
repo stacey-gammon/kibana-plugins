@@ -1,0 +1,8 @@
+{
+  "name": "greeting_card_v1",
+  "version": "1.0.0",
+  "kibana": {
+    "version": "7.6.2",
+    "templateVersion": "1.0.0"
+  }
+}
