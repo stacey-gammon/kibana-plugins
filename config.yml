@@ -1,0 +1,3 @@
+# Specifies the relative path to your kibana development directory. This is used to keep
+# file changes in sync.
+#kibana.dir: ../kibana
