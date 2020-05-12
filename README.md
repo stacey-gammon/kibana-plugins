@@ -16,8 +16,12 @@ npm install gulp -g
 
 - Copy `config.yml` to `config.dev.yml` and set kibana.dir
 
-- Run 
+- Run:
 
 ```
-yarn start
-``` 
+gulp 
+```
+
+- Develop in the `${kibana.dir}/plugin` to get typescript and imports to resolve correctly, the
+  changes will be copied back over into this dir.
+
