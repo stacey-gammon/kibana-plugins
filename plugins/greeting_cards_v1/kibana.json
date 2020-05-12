@@ -2,7 +2,7 @@
   "id": "greetingCards",
   "version": "0.0.1",
   "kibanaVersion": "kibana",
-  "configPath": ["greeting_cards"],
+  "configPath": [""],
   "server": false,
   "ui": true,
   "requiredPlugins": [],
