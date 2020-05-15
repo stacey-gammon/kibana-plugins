@@ -1,0 +1,8 @@
+{
+  "name": "THE ONLY REASON THIS IS HERE IS TO WORK AROUND A BUG AND HAVE IT BE PICKED UP BY A DISTRIBUTABLE",
+  "version": "1.0.0",
+  "kibana": {
+    "version": "8.0.0",
+    "templateVersion": "1.0.0"
+  }
+}
