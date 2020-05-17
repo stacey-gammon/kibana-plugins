@@ -1,5 +1,3 @@
-import { UiComponent } from 'src/plugins/kibana_utils/common';
-
 export interface GreetingCardPersonalization {
   message: string;
   to: string;
@@ -9,5 +7,5 @@ export interface GreetingCardPersonalization {
 export interface GreetingCardTemplate {
   id: string;
   displayName: string;
-  render: (personalization: GreetingCardPersonalization) => UiComponent;
+  render: () => React.ReactType<GreetingCardPersonalization>;
 }
