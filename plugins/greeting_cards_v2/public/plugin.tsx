@@ -1,8 +1,7 @@
 import React from 'react';
 import { Plugin, CoreSetup, AppMountParameters } from 'kibana/public';
 import { createServiceWrapper } from './services';
-import { GreetingCardTemplate, GreetingCardPersonalization } from './types';
-import { reactToUiComponent } from '../../../src/plugins/kibana_react/public';
+import { GreetingCardTemplate } from './types';
 
 export class GreetingCardsV2Plugin implements Plugin<void, void, {}, {}> {
   private greetingCardTemplates: Array<GreetingCardTemplate> = [];
@@ -16,9 +15,7 @@ export class GreetingCardsV2Plugin implements Plugin<void, void, {}, {}> {
       return {
         id: 'birthday',
         displayName: 'Birthday',
-        render: (card: GreetingCardPersonalization) => {
-          return reactToUiComponent(() => <BirthdayGreetingCard {...card} />);
-        }
+        render: () => BirthdayGreetingCard,
       }
     });
 
@@ -27,14 +24,19 @@ export class GreetingCardsV2Plugin implements Plugin<void, void, {}, {}> {
       return {
         id: 'getWellSoon',
         displayName: 'Get well soon',
-        render: (card: GreetingCardPersonalization) => {
-          return reactToUiComponent(() => <GetWellSoonGreetingCard {...card} />);
-        }
+        render: () => GetWellSoonGreetingCard
+      }
+    });
+
+    this.registerGreetingCardTemplate(async () => {
+      return {
+        id: 'lame',
+        displayName: 'Basic',
+        render: () => ({ to, message, from }) => <div>{`Hi ${to}, ${message}, from ${from}`}</div>,
       }
     });
 
     const templates = this.greetingCardTemplates;
-  
     core.application.register({
       id: 'greetingCardsV2',
       title: 'Greeting cards V2',

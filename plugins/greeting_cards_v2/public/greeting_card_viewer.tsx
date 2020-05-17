@@ -2,7 +2,6 @@
 import React from 'react';
 import { EuiPageContent, EuiCallOut } from '@elastic/eui';
 import { GreetingCardTemplate } from './types';
-import { uiToReactComponent } from '../../../src/plugins/kibana_react/public';
 
 interface Props {
   templates: Array<GreetingCardTemplate>;
@@ -26,10 +25,10 @@ export function GreetingCardViewer({ templates }: Props) {
     return <EuiCallOut color="danger">{`Error! No template found with id ${id}`}</EuiCallOut>;
   }
   
-  const Card = uiToReactComponent(template.render({ message, to, from }))
+  const Card = template.render();
   return (
     <EuiPageContent>
-      <Card />
+      <Card to={to} message={message} from={from} />
     </EuiPageContent>
   );
 }
